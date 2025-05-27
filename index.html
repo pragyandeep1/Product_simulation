@@ -69,8 +69,8 @@
                         <thead>
                             <tr>
                                 <th>Product</th>
-                                <th>Price</th>
                                 <th>Location</th>
+                                <th>Price (&#8377;)</th>
                             </tr>
                         </thead>
                         <tbody id="resultBody">
@@ -126,8 +126,8 @@
                 resultBody.innerHTML = `
                     <tr>
                         <td>${product.replace('_', ' ').toUpperCase()}</td>
-                        <td>${base}</td>
                         <td>${city.toUpperCase()}</td>
+                        <td>${base}</td>
                     </tr>
                 `;
             } else if (validPins.includes(pin)) {
@@ -135,8 +135,8 @@
                 resultBody.innerHTML = `
                     <tr>
                         <td>${product.replace('_', ' ').toUpperCase()}</td>
-                        <td>${total}</td>
                         <td>${pin}</td>
+                        <td>${total}</td>
                     </tr>
                 `;
             } else {
